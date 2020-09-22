@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9650DEEC-8880-4015-9FBD-0365F70901FF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PointCardManagementSystem_Group4</RootNamespace>
+    <AssemblyName>PointCardManagementSystem_Group4</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player_Enquiry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Player_Enquiry.Designer.cs">
+      <DependentUpon>Player_Enquiry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player_Launch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Player_Launch.Designer.cs">
+      <DependentUpon>Player_Launch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player_Launch_Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Player_Launch_Register.Designer.cs">
+      <DependentUpon>Player_Launch_Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player_Minigame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Player_Minigame.Designer.cs">
+      <DependentUpon>Player_Minigame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player_ReflectProblem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Player_ReflectProblem.Designer.cs">
+      <DependentUpon>Player_ReflectProblem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player_Topup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Player_Topup.Designer.cs">
+      <DependentUpon>Player_Topup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player_Topup_PointGain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Player_Topup_PointGain.Designer.cs">
+      <DependentUpon>Player_Topup_PointGain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player_Topup_VirtualMoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Player_Topup_VirtualMoney.Designer.cs">
+      <DependentUpon>Player_Topup_VirtualMoney.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PointCardDatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PointCardDatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff.Designer.cs">
+      <DependentUpon>Staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Player.Designer.cs">
+      <DependentUpon>Player.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Registration.Designer.cs">
+      <DependentUpon>Login_Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_ForgetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_ForgetPassword.Designer.cs">
+      <DependentUpon>Login_ForgetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_GameNews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_GameNews.Designer.cs">
+      <DependentUpon>Login_GameNews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Staff_CreatePointCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_CreatePointCard.Designer.cs">
+      <DependentUpon>Staff_CreatePointCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_PlayerAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_PlayerAccount.Designer.cs">
+      <DependentUpon>Staff_PlayerAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_PointCardStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_PointCardStatus.Designer.cs">
+      <DependentUpon>Staff_PointCardStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_TopupPlayerAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_TopupPlayerAccount.Designer.cs">
+      <DependentUpon>Staff_TopupPlayerAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_ViewQuestions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_ViewQuestions.Designer.cs">
+      <DependentUpon>Staff_ViewQuestions.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.zh-Hant.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Player_Enquiry.resx">
+      <DependentUpon>Player_Enquiry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Player_Launch.resx">
+      <DependentUpon>Player_Launch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Player_Launch_Register.resx">
+      <DependentUpon>Player_Launch_Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Player_Minigame.resx">
+      <DependentUpon>Player_Minigame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Player_ReflectProblem.resx">
+      <DependentUpon>Player_ReflectProblem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Player_Topup.resx">
+      <DependentUpon>Player_Topup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Player_Topup_PointGain.resx">
+      <DependentUpon>Player_Topup_PointGain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Player_Topup_VirtualMoney.resx">
+      <DependentUpon>Player_Topup_VirtualMoney.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff.resx">
+      <DependentUpon>Staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Player.resx">
+      <DependentUpon>Player.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Registration.resx">
+      <DependentUpon>Login_Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_ForgetPassword.resx">
+      <DependentUpon>Login_ForgetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_GameNews.resx">
+      <DependentUpon>Login_GameNews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Staff_CreatePointCard.resx">
+      <DependentUpon>Staff_CreatePointCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_PlayerAccount.resx">
+      <DependentUpon>Staff_PlayerAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_PointCardStatus.resx">
+      <DependentUpon>Staff_PointCardStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_TopupPlayerAccount.resx">
+      <DependentUpon>Staff_TopupPlayerAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_ViewQuestions.resx">
+      <DependentUpon>Staff_ViewQuestions.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="PointCardDatabaseDataSet.xsc">
+      <DependentUpon>PointCardDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PointCardDatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PointCardDatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PointCardDatabaseDataSet.xss">
+      <DependentUpon>PointCardDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
